@@ -38,14 +38,10 @@ public class MainActivity extends AppCompatActivity {
                 String content = readDiary(fileName);//파일 읽어와서 저장
                 editDiary.setText(content);//가져온 content설정
                 butSave.setEnabled(true);//버튼 활성화
-
             }
         });
     }
-        String readDiary(String fileName){
-            return null;
-        }
-
-
+    String readDiary(String fileName){
+        return null;
     }
 }
