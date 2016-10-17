@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) { //날짜가 변경될때마다 호출됨
                 fileName = year + "_" + monthOfYear + "_" + dayOfMonth + ".txt";//fileName저장, 초기화
                 String content = readDiary(fileName);//파일 읽어와서 저장
-                editDiary.setText(content)//가져온 content설정
+                editDiary.setText(content);//가져온 content설정
                 butSave.setEnabled(true);//버튼 활성화
 
             }
