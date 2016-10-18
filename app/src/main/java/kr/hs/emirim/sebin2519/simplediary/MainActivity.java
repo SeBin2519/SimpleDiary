@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         //현재날짜 구하기
         Calendar calendar = Calendar.getInstance(); //추상클래스
         int nowYear = calendar.get(Calendar.YEAR);
-        int nowMonth = calendar.get(Calendar.MONTH) + 1; //1월은 0반환
+        int nowMonth = calendar.get(Calendar.MONTH)+1; //1월은 0반환
         int nowDate = calendar.get(Calendar.DATE);
 
         //구한 현재날짜 datePicker에 설정
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         String diaryContents=null;
         try {
             FileInputStream in=openFileInput(fileName);
-            byte[] txt=new byte[1500];
+            byte[] txt=new byte[500];
             in.read(txt);
             in.close();
             diaryContents=new String(txt);
